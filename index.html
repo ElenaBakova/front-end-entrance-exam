@@ -1,13 +1,317 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="resume" id="resume-to-print">
+    <div class="resume-section" style="height: 124px">
+        <div class="person-info">
+            <img src="images/profileImg.svg" alt="Profile picture"/>
+            <div class="resume-card profile-info">
+                <p class="poppins-medium" id="greeting" style="font-size: 10px;" contenteditable="true">Hello 👋🏻 I’m</p>
+                <div style="margin-top: 28px">
+                    <p class="poppins-semibold" id="name" style="font-size: 14px; line-height: 1"
+                       contenteditable="true">Graham Hunt</p>
+                    <p class="poppins-medium" id="position"
+                       style="font-size: 12px; color: rgba(92, 92, 92, 1); margin-top: 6px"
+                       contenteditable="true">Brand/Logo Designer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-card languages-info">
+            <p class="poppins-medium" id="languages" style="font-size: 14px;" contenteditable="true">Languages</p>
+            <div class="languages-row">
+                <ul class="languages-list">
+                    <li class="poppins-medium" id="language1" contenteditable="true">English</li>
+                    <li class="poppins-medium" id="language2" contenteditable="true">Spanish</li>
+                    <li class="poppins-medium" id="language3" contenteditable="true">French</li>
+                </ul>
+
+                <div class="levels">
+                    <div class="progress-bar" style="width: 99%"></div>
+                    <div class="progress-bar" style="width: 78%"></div>
+                    <div class="progress-bar" style="width: 67%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="resume-section" style="height: 289px">
+        <div class="column resume-card education-info">
+            <p class="poppins-medium" id="education-title" style="font-size: 14px;" contenteditable="true">Education</p>
+
+            <div class="row" style="gap: 16px; height: 100%; width: 100%">
+                <div class="column" style="gap: 12px; width: 50%;">
+                    <div class="column resume-card" id="last-education"
+                         style="background-color: #28D979; gap: 8px; padding: 8px; border-radius: 10px">
+                        <div class="row" style="gap: 64px">
+                            <p class="poppins-medium" id="education1" style="font-size: 10px; color: white"
+                               contenteditable="true">
+                                2024</p>
+                            <img src="images/Vector.svg" alt=""/>
+                        </div>
+                        <div class="column">
+                            <p class="poppins-medium" id="education1-type"
+                               style="font-size: 10px; color: white; margin-bottom: -2px"
+                               contenteditable="true">
+                                UX/UI</p>
+                            <div class="tags-container">
+                                <div class="hashtag" id="hashtag1" contenteditable="true">#UX</div>
+                                <div class="hashtag" id="hashtag2" contenteditable="true">#UI</div>
+                                <div class="hashtag" id="hashtag3" contenteditable="true">#research</div>
+                                <div class="hashtag" id="hashtag4" contenteditable="true">#DesignSystem</div>
+                                <div class="hashtag" id="hashtag5" contenteditable="true">#Agile</div>
+                                <div class="hashtag" id="hashtag6" contenteditable="true">#wireframing</div>
+                                <div class="hashtag" id="hashtag7" contenteditable="true">#figma</div>
+                                <div class="hashtag" id="hashtag8" contenteditable="true">#IA</div>
+                            </div>
+                        </div>
+                        <p class="poppins-regular" id="education1-place" style="font-size: 8px; color: #ffffff"
+                           contenteditable="true">Neoland</p>
+                    </div>
+
+                    <div class="column resume-card" style="background-color: #ffffff; gap: 8px; padding: 8px">
+                        <p class="poppins-medium" id="education2" style="font-size: 10px;" contenteditable="true">
+                            2017-2021</p>
+                        <div class="column">
+                            <p class="poppins-medium" style="font-size: 10px; margin-bottom: -2px" id="education2-type"
+                               contenteditable="true">Graphic design</p>
+                            <div class="tags-container">
+                                <div class="tag" id="tag1" contenteditable="true">#branding</div>
+                                <div class="tag" id="tag2" contenteditable="true">#web</div>
+                                <div class="tag" id="tag3" contenteditable="true">#illustration</div>
+                                <div class="tag" id="tag4" contenteditable="true">#adobe</div>
+                            </div>
+                        </div>
+                        <p class="poppins-regular" id="education2-place" style="font-size: 8px; color: #000000"
+                           contenteditable="true">Cali
+                            Institute of the Arts</p>
+                    </div>
+                </div>
+
+                <div class="column resume-card"
+                     style="background-color: #ffffff; width: 50%; height: 50%; gap: 8px; padding: 8px">
+                    <p class="poppins-medium" id="education3" style="font-size: 10px;" contenteditable="true">2022</p>
+                    <div class="column">
+                        <p class="poppins-medium" id="education3-type" style="font-size: 10px; margin-bottom: -2px"
+                           contenteditable="true">Product designer</p>
+                        <div class="tags-container">
+                            <div class="tag" id="tag_1" contenteditable="true">#analytics</div>
+                            <div class="tag" id="tag_2" contenteditable="true">#research</div>
+                            <div class="tag" id="tag_3" contenteditable="true">#prototype</div>
+                            <div class="tag" id="tag_4" contenteditable="true">#wireframes</div>
+                        </div>
+                    </div>
+                    <p class="poppins-regular" id="education3-place" style="font-size: 8px; color: #000000"
+                       contenteditable="true">
+                        Coursera</p>
+                </div>
+            </div>
+        </div>
+        <div class="column education-info" style="gap: 20px">
+            <div class="column resume-card" style="gap: 16px">
+                <p class="poppins-medium" id="interests" style="font-size: 14px;" contenteditable="true">Interests</p>
+                <div class="interests-container">
+                    <div class="interest-box" id="interests1" contenteditable="true">branding</div>
+                    <div class="interest-box" id="interests2" contenteditable="true">brand identity</div>
+                    <div class="interest-box" id="interests3" contenteditable="true">logo</div>
+                    <div class="interest-box" id="interests4" contenteditable="true">typography</div>
+                    <div class="interest-box" id="interests5" contenteditable="true">photography</div>
+                    <div class="interest-box" id="interests6" contenteditable="true">designing</div>
+                    <div class="interest-box" id="interests7" contenteditable="true">poster design</div>
+                    <div class="interest-box" id="interests8" contenteditable="true">research</div>
+                    <div class="interest-box" id="interests9" contenteditable="true">social networks</div>
+                    <div class="interest-box" id="interests0" contenteditable="true">illustration</div>
+                </div>
+            </div>
+            <div class="column resume-card" style="background-color: black; gap: 11px">
+                <p class="poppins-medium" id="phrase1" style="font-size: 14px; color: #ffffff" contenteditable="true">
+                    Let´s chat! I´m
+                    ready to work on
+                    exciting projects</p>
+                <div class="row" style="gap: 8px">
+                    <p class="poppins-regular" id="email" style="font-size: 10px; color: #ffffff"
+                       contenteditable="true">
+                        ivann19bj@gmail.com</p>
+                    <p class="poppins-regular" id="separator1" style="font-size: 10px; color: #ffffff"
+                       contenteditable="true">|</p>
+                    <p class="poppins-regular" id="phone" style="font-size: 10px; color: #ffffff"
+                       contenteditable="true">+34 666
+                        666 666</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="resume-section" style="height: 359px">
+        <div class="resume-card" style="max-width: 124px; margin-top: 20px">
+            <div class="column" style="gap: 15px">
+                <p class="poppins-medium" id="tools" style="font-size: 14px" contenteditable="true">Tools</p>
+                <div class="column" style="gap:12px">
+                    <div class="column">
+                        <div class="tool-rectangle">
+                            <p class="tools-label poppins-medium" id="tool-title1" contenteditable="true">design</p>
+                            <div class="tools-box">
+                                <img src="images/logoFigma.svg" alt="logoFigma"/>
+                                <img src="images/logoCreativeCloud.svg" alt="logoCreativeCloud"/>
+                                <img src="images/logoMiro%201.svg" alt="logoMiro"/>
+                                <img src="images/logoNotion.svg" alt="logoNotion"/>
+                                <img src="images/logoMeet.svg" alt="logoMeet"/>
+                                <img src="images/logoanalytics.svg" alt="logoanalytics"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="tool-rectangle">
+                            <p class="tools-label poppins-medium" id="tool-title2" contenteditable="true">no-code</p>
+                            <div class="tools-box">
+                                <img src="images/logoZapìer%201.svg" alt="logoZapìer"/>
+                                <img src="images/logoWebflow.svg" alt="logoWebflow"/>
+                                <img src="images/logoFramer.svg" alt="logoFramer"/>
+                                <img src="images/logoWordpress.svg" alt="logoWordpress"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="tool-rectangle">
+                            <p class="tools-label poppins-medium" id="tool-title3" contenteditable="true">artificial
+                                intelligence</p>
+                            <div class="tools-box">
+                                <img src="images/logoChatGPT%201.svg" alt="logoChatGPT"/>
+                                <img src="images/logoCopilot%201.svg" alt="logoCopilot"/>
+                                <img src="images/logoMidjourney%201.svg" alt="logoMidjourney"/>
+                                <img src="images/logoMidjourney%201.svg" alt="logoMidjourney" style="opacity: 0"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column resume-card" style="gap: 16px; height: 100%">
+            <p class="poppins-medium" id="experience" style="font-size: 14px" contenteditable="true">Experience</p>
+            <div class="column" style="gap: 10px; width: 100%; height: 100%">
+                <div class="column resume-card" id="last-experience"
+                     style="background-color: #28D979; gap: 8px; padding: 8px; border-radius: 10px">
+                    <div class="row" style="justify-content: space-between;">
+                        <p class="poppins-medium" id="experience-period1" style="font-size: 8px; color: #ffffff"
+                           contenteditable="true">Jul.
+                            2023 - Avg. 2023</p>
+                        <p class="recent-plaque">most recent</p>
+                    </div>
+                    <div class="row" style="gap:8px">
+                        <div class="column">
+                            <p class="poppins-medium" id="experience-position1"
+                               style="margin-bottom: -2px; font-size: 10px; color: #ffffff; width: 124px"
+                               contenteditable="true">
+                                Senior Graphic
+                                Designer</p>
+                            <div class="row" style="gap:6px">
+                                <p class="poppins-regular" id="experience-company1"
+                                   style="font-size: 8px; color: #EBF9F2"
+                                   contenteditable="true">Pinnacle</p>
+                                <p class="poppins-regular" id="separator2" style="font-size: 8px; color: #EBF9F2"
+                                   contenteditable="true">|</p>
+                                <p class="poppins-regular" id="experience-type1" style="font-size: 8px; color: #EBF9F2"
+                                   contenteditable="true">Full-time</p>
+                            </div>
+                        </div>
+                        <ul style="margin-left: 15px">
+                            <li class="poppins-regular" id="experience-work1"
+                                style="color: #ffffff; list-style-type: disc; font-size: 8px"
+                                contenteditable="true">
+                                Research and brainstorm various design ideas for content and marketing.
+                            </li>
+                            <li class="poppins-regular" id="experience-work2"
+                                style="color: #ffffff; list-style-type: disc; font-size: 8px"
+                                contenteditable="true">
+                                Review the work submitted by Junior Designers and sharing feedback.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column resume-card"
+                     style="background-color: #ffffff; gap: 8px; padding: 8px; border-radius: 10px">
+                    <p class="poppins-medium" id="experience-period2" style="font-size: 8px;" contenteditable="true">
+                        Ene. 2021 - Jul. 2023</p>
+
+                    <div class="row" style="gap:8px">
+                        <div class="column">
+                            <p class="poppins-medium" id="experience-position2"
+                               style="margin-bottom: -2px; font-size: 10px; width: 124px" contenteditable="true">
+                                Graphic / Web designer</p>
+                            <div class="row" style="gap:6px">
+                                <p class="poppins-regular" id="experience-company2"
+                                   style="font-size: 8px; color: #3F3D3D" contenteditable="true">Double Square</p>
+                                <p class="poppins-regular" id="separator3" style="font-size: 8px; color: #3F3D3D"
+                                   contenteditable="true">|</p>
+                                <p class="poppins-regular" id="experience-type2" style="font-size: 8px; color: #3F3D3D"
+                                   contenteditable="true">Full-time</p>
+                            </div>
+                        </div>
+                        <ul style="margin-left: 15px">
+                            <li class="poppins-regular" id="experience-work3"
+                                style="list-style-type: disc; font-size: 8px" contenteditable="true">
+                                Development of internal projects from scratch, product design of brands.
+                            </li>
+                            <li class="poppins-regular" id="experience-work4"
+                                style="list-style-type: disc; font-size: 8px" contenteditable="true">
+                                Landing page, webapps and hybrid apps
+                            </li>
+                            <li class="poppins-regular" id="experience-work5"
+                                style="list-style-type: disc; font-size: 8px" contenteditable="true">
+                                Taking decisions with stakeholders for the future of products such as Beagle labs,
+                                myur...
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column resume-card"
+                     style="background-color: #ffffff; gap: 8px; padding: 8px; border-radius: 10px">
+                    <p class="poppins-medium" id="experience-period3" style="font-size: 8px;" contenteditable="true">
+                        Feb. 2021 - Jul. 2023</p>
+                    <div class="row" style="gap:8px;">
+                        <div class="column">
+                            <p class="poppins-medium" id="experience-position3"
+                               style="margin-bottom: -2px; font-size: 10px; width: 124px" contenteditable="true">
+                                Graphic Designer</p>
+                            <div class="row" style="gap:6px">
+                                <p class="poppins-regular" id="experience-company3"
+                                   style="font-size: 8px; color: #3F3D3D" contenteditable="true">Freelance</p>
+                            </div>
+                        </div>
+                        <ul style="margin-left: 15px">
+                            <li class="poppins-regular" id="experience-work6"
+                                style="list-style-type: disc; font-size: 8px" contenteditable="true">
+                                Visual design for Events, Brands and Products.
+                            </li>
+                            <li class="poppins-regular" id="experience-work7"
+                                style="list-style-type: disc; font-size: 8px" contenteditable="true">
+                                Product design, Packaging Design
+                            </li>
+                            <li class="poppins-regular" id="experience-work8"
+                                style="list-style-type: disc; font-size: 8px" contenteditable="true">
+                                Logo Design
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin: 30px; display: flex; justify-content: center;">
+    <button type="button" id="download-btn" onclick="downloadCV()">Скачать</button>
+</div>
+<script src="js/main.js"></script>
+</body>
 </html>
